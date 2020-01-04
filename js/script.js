@@ -13,14 +13,6 @@ let quotes = [
     citation: "From the book titled : I know Why the Caged Bird Sings",
     year: 1969
   },
-
-  {
-    quote:
-      "There is a time in every man’s life when he must push off from the wharf of safety into the sea of chance",
-    source: "Maya Angelou",
-    citation: "From the book titled : I know Why the Caged Bird Sings",
-    year: 1969
-  },
   {
     quote:
       "“I think you travel to search and you come back home to find yourself there",
