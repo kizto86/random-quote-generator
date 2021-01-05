@@ -1,32 +1,35 @@
+const { check } = require("prettier");
+
 /******************************************
 Treehouse Techdegree:
 FSJS project 1 - A Random Quote Generator
 ******************************************/
-
+@ts-check
 /**
  * An array of quotes objects
  */
-let quotes = [
+let quotes;
+exports.quotes = [
   {
     quote: "All knowledge is spendable currency, depending on the market",
     source: "Maya Angelou",
     citation: "From the book titled : I know Why the Caged Bird Sings",
-    year: 1969
+    year: 1969,
   },
   {
     quote:
-      "“I think you travel to search and you come back home to find yourself there",
-    source: "Chimamanda Ngozi Adichie"
+      "I think you travel to search and you come back home to find yourself there",
+    source: "Chimamanda Ngozi Adichie",
   },
 
   {
     quote: "Muddy water is best cleared by leaving it alone",
-    source: "Alan Watts"
+    source: "Alan Watts",
   },
 
   {
     quote: "Life is what happens when you are busy making other plans",
-    source: "John Lennon"
+    source: "John Lennon",
   },
 
   {
@@ -34,12 +37,12 @@ let quotes = [
       "Self-love is the least aggressive, most effective form of intimidation",
     source: "Chidera Eggerue",
     citation: "From the book titled : What a time to be alone",
-    year: 2018
+    year: 2018,
   },
 
   {
     quote: "You learn how to cut down trees by cutting them down",
-    source: "Bateke proverb"
+    source: "Bateke proverb",
   },
 
   {
@@ -47,8 +50,8 @@ let quotes = [
       "Your current situation doesn't determine your destination... you do.",
     source: "Coach jae",
     citation: "iamlifeskills",
-    year: 2000
-  }
+    year: 2000,
+  },
 ];
 
 /**
@@ -57,11 +60,13 @@ let quotes = [
  * @return {string}  A single  quote
  */
 
-const getRandomQuote = quotes => {
+const getRandomQuote = (quotes) => {
   randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 };
-getRandomQuote(quotes);
+let result = getRandomQuote(quotes);
+
+console.log(result);
 
 /**
  * An array of different colors  used by the randomBackgroundColor function to change the background  colors randomly.
@@ -74,14 +79,14 @@ let backgroundColor = [
   "#639",
   "#008000",
   "#b8860b",
-  "#a9a9a9"
+  "#a9a9a9",
 ];
 
 /**
  * A function called on the backgroundColor which returns colors randomly
  * @param {array}  An array of hex colors
  */
-const randomBackgroundColor = backgroundColor => {
+const randomBackgroundColor = (backgroundColor) => {
   randomNumber = Math.floor(Math.random() * backgroundColor.length);
   return backgroundColor[randomNumber];
 };

@@ -1,0 +1,22 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "description": "Displays random quotes",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kizto86/Random-quote-generator.git"
+  },
+  "author": "Kingchuks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kizto86/Random-quote-generator/issues"
+  },
+  "homepage": "https://github.com/kizto86/Random-quote-generator#readme",
+  "devDependencies": {
+    "jest": "^26.4.0"
+  }
+}
