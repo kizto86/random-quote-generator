@@ -1,15 +1,13 @@
-const { check } = require("prettier");
-
 /******************************************
 Treehouse Techdegree:
 FSJS project 1 - A Random Quote Generator
 ******************************************/
-@ts-check
+
 /**
  * An array of quotes objects
  */
 let quotes;
-exports.quotes = [
+quotes = [
   {
     quote: "All knowledge is spendable currency, depending on the market",
     source: "Maya Angelou",

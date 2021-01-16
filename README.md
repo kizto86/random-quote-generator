@@ -5,3 +5,7 @@ The Random Quote Generator app displays randomly selected quote every 30 seconds
 ## Technology Used
 
 JavaScript.
+
+## Live version
+
+https://kizto86.github.io/random-quote-generator/
